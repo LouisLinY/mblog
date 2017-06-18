@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from django.db import models
 from django.utils import timezone
  
@@ -12,5 +13,5 @@ class Post(models.Model):
         ordering = ('-pub_date',)
 
     def __unicode__(self):
-        return self.slug
+        return self.title
 
